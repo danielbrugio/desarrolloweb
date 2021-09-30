@@ -52,6 +52,7 @@ header {
 .redes__sociales .redes__sociales__img {
   width: 3rem;
   color: #3AAF77;
+  margin: 0.5em;
 }
 
 .logoNav {
@@ -465,6 +466,17 @@ header {
   position: relative;
 }
 
+.actividades__img {
+  width: 300px;
+  height: 500px;
+  opacity: 1;
+  display: block;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
 .actividades__boton__horarios {
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -478,6 +490,14 @@ header {
   text-align: center;
 }
 
+.actividades__cards:hover .actividades__img {
+  opacity: 1;
+}
+
+.actividades__cards:hover .actividades__boton__horarios {
+  opacity: 1;
+}
+
 .reserva {
   text-decoration: none;
   text-transform: uppercase;
@@ -486,21 +506,6 @@ header {
   text-align: center;
   border: 1px solid black;
   font-weight: 800;
-}
-
-.actividades__cards:hover .actividades__boton__horarios {
-  opacity: 1;
-}
-
-.actividades__img {
-  width: 300px;
-  height: 500px;
-  opacity: 1;
-  display: block;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 
 .flex {

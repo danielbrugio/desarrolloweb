@@ -21,6 +21,15 @@
   position: relative;
 }
 
+.actividades__img {
+  width: 300px;
+  height: 500px;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
 .actividades__boton__horarios {
   transition: .5s ease;
   opacity: 0;
@@ -30,7 +39,14 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  
+}
+
+.actividades__cards:hover .actividades__img {
+  opacity: 1;
+}
+
+.actividades__cards:hover .actividades__boton__horarios {
+  opacity: 1;
 }
 
 .reserva {
@@ -41,20 +57,6 @@
   text-align: center;
   border: 1px solid black;
   font-weight: 800;
-}
-.actividades__cards:hover {
-  .actividades__boton__horarios {
-    opacity: 1;
-  }
-}
-
-.actividades__img {
-  width: 300px;
-  height: 500px;
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
 }
 
 .flex {
