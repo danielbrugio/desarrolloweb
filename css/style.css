@@ -601,6 +601,16 @@ header {
   font-size: 2em;
 }
 
+.card-text {
+  color: black;
+  font-size: 2em;
+}
+
+.card-price {
+  color: black;
+  font-size: 2em;
+}
+
 /*--------------- NOSOTROS -------------*/
 .tituloNosotros {
   font-size: 4rem;
