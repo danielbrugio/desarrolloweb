@@ -561,9 +561,6 @@ header {
 .titulo__productos {
   color: #3AAF77;
   font-size: 4em;
-  background-color: black;
-  padding: 3em;
-  margin: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,80 +569,36 @@ header {
           justify-content: center;
 }
 
-/* CONDICIONALES */
-/* Mi variable */
-.titulo__productos {
-  background-color: black;
-  color: #3AAF77;
-}
-
-/* BUCLES */
 .productos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.producto-1 {
-  width: 100px;
-  height: 100px;
-  background-color: #3AAF77;
-  border: dashed 2px black;
-  color: black;
-  font-size: 1em;
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 25rem;
+  margin: 1em;
 }
 
-.producto-2 {
-  width: 200px;
-  height: 200px;
-  background-color: #3AAF77;
-  border: dashed 2px black;
+.card-title {
   color: black;
   font-size: 2em;
-}
-
-.producto-3 {
-  width: 300px;
-  height: 300px;
-  background-color: #3AAF77;
-  border: dashed 2px black;
-  color: black;
-  font-size: 3em;
-}
-
-.producto-4 {
-  width: 400px;
-  height: 400px;
-  background-color: #3AAF77;
-  border: dashed 2px black;
-  color: black;
-  font-size: 4em;
-}
-
-.horarios-icono {
-  background-image: url("/Imagenes/horarios.png");
-  width: 3em;
-  height: 3em;
-}
-
-.facebook-icono {
-  background-image: url("/Imagenes/facebook.png");
-  width: 3em;
-  height: 3em;
-}
-
-.whatsapp-icono {
-  background-image: url("/Imagenes/whatsapp.png");
-  width: 3em;
-  height: 3em;
-}
-
-.telegrama-icono {
-  background-image: url("/Imagenes/telegrama.png");
-  width: 3em;
-  height: 3em;
 }
 
 /*--------------- NOSOTROS -------------*/
