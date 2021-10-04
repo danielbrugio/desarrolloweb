@@ -1,8 +1,7 @@
 /*--------------- NOSOTROS -------------*/
 .tituloNosotros {
   font-size: 4rem;
-  position: relative;
-  left: 15%;
+  text-align: center;
 }
 
 .quienesSomos {
@@ -27,6 +26,7 @@
 .profeFeldenkrais,
 .profeMultinivel {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   margin: 20px;
 }

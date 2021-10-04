@@ -96,17 +96,8 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .logoNav {
-    width: 20%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .nav {
-    width: 80%;
+    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -114,10 +105,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -135,26 +125,47 @@ header {
   a:hover {
     color: #3AAF77;
   }
-  #logoPrincipal {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  .logoNav {
+    background-color: transparent;
+    width: 10em;
+    height: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .horarios {
+  .redes__sociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+    margin: 4em;
+  }
+  .redes__sociales img {
+    margin: 1em;
+  }
+  .titulo__horarios {
     color: #3AAF77;
     font-size: 3em;
     text-transform: uppercase;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: row;
-        -ms-flex: row wrap;
-            flex: row wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .horariosAranceles {
+  .horarios__aranceles {
     width: 100%;
   }
   .preguntas {
@@ -173,7 +184,7 @@ header {
         -ms-flex-align: center;
             align-items: center;
   }
-  .protocolo {
+  .preguntas__protocolo {
     background-color: #3AAF77;
     color: #CED5C7;
     font-size: 1.5rem;
@@ -186,12 +197,12 @@ header {
     justify-self: center;
     padding: 1fr;
   }
-  .consideraciones {
+  .preguntas__consideraciones {
     font-size: 1rem;
     font-weight: bold;
     margin: 3rem;
   }
-  .faq {
+  .preguntas__faq {
     background-color: #65E298;
     color: #000000;
     font-size: 1.5rem;
@@ -203,7 +214,7 @@ header {
   .accordion-body {
     font-size: 1em;
   }
-  .tituloActividades {
+  .titulo__actividades {
     font-size: 4rem;
     text-transform: uppercase;
     display: -webkit-box;
@@ -212,46 +223,6 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .actividades {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "flex stretch" "hatha vinyasa" "integral alineacion" "feldenkrais multinivel";
-    -ms-grid-columns: (50%)[2];
-        grid-template-columns: repeat(2, 50%);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    place-items: center;
-    gap: 10px 10px;
-  }
-  .actividades img {
-    width: 200px;
-    height: 350px;
-    opacity: 1;
-    display: block;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-  }
-  .redesSociales {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    position: relative;
-    margin: 4em;
-  }
-  .redesSociales img {
-    margin: 1em;
   }
 }
 
@@ -270,28 +241,17 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .logoNav {
-    width: 30%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .nav {
-    width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -302,40 +262,24 @@ header {
     text-decoration: none;
     color: #65E298;
     font-weight: 1000;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     display: block;
   }
   a:hover {
     color: #3AAF77;
   }
-  #logoPrincipal {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  .logoNav {
+    background-color: transparent;
+    width: 10em;
+    height: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .actividades {
-    display: -ms-grid;
-    display: grid;
-        grid-template-areas: "flex stretch" "hatha vinyasa" "integral alineacion" "feldenkrais multinivel";
-    -ms-grid-columns: (50%)[2];
-        grid-template-columns: repeat(2, 50%);
-    -ms-grid-rows: auto;
-        grid-template-rows: auto;
-    place-items: center;
-    gap: 10px 10px;
-  }
-  .actividades img {
-    width: 200px;
-    height: 350px;
-    opacity: 1;
-    display: block;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-  }
-  .redesSociales {
+  .redes__sociales {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -346,11 +290,83 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     position: relative;
+    margin: 4em;
   }
-  .redesSociales img {
-    width: 1rem;
-    margin: 1rem;
+  .redes__sociales img {
+    margin: 1em;
+  }
+  .titulo__horarios {
+    color: #3AAF77;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .horarios__aranceles {
+    width: 100%;
+  }
+  .preguntas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .preguntas__protocolo {
+    background-color: #3AAF77;
+    color: #CED5C7;
+    font-size: 1rem;
+    border: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    justify-self: center;
+    padding: 1fr;
+  }
+  .preguntas__consideraciones {
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin: 2rem;
+  }
+  .preguntas__faq {
+    background-color: #65E298;
+    color: #000000;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  .accordion-button {
+    font-size: .3em;
+  }
+  .accordion-body {
+    font-size: .7em;
+  }
+  .titulo__actividades {
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -573,8 +589,7 @@ header {
 /*--------------- NOSOTROS -------------*/
 .tituloNosotros {
   font-size: 4rem;
-  position: relative;
-  left: 15%;
+  text-align: center;
 }
 
 .quienesSomos {
@@ -609,6 +624,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

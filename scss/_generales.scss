@@ -37,7 +37,7 @@ header {
     width: 3rem;
     color: #3AAF77;
     margin: 0.5em;
-    
+
   }
 }
 
@@ -53,13 +53,14 @@ header {
   width: 50em;
   font-size: 2em;
   text-transform: uppercase;
+
   a {
     color: #3AAF77;
   }
 }
 
 .nav-link {
-  color: #3AAF77 !important ; 
+  color: #3AAF77 !important;
 
 }
 
@@ -74,19 +75,12 @@ header {
     flex-wrap: wrap;
   }
 
-  .logoNav {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   .nav {
-    width: 80%;
+    width: 100px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
   }
@@ -104,22 +98,36 @@ header {
     }
   }
 
-  #logoPrincipal {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  .logoNav {
+    background-color: transparent;
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .horarios {
+  .redes__sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    margin: 4em;
+
+    img {
+      margin: 1em;
+    }
+  }
+
+  .titulo__horarios {
     color: #3AAF77;
     font-size: 3em;
     text-transform: uppercase;
     display: flex;
-    flex: row wrap;
     justify-content: center;
   }
 
-  .horariosAranceles {
+  .horarios__aranceles {
     width: 100%;
   }
 
@@ -131,7 +139,7 @@ header {
     align-items: center;
   }
 
-  .protocolo {
+  .preguntas__protocolo {
     background-color: #3AAF77;
     color: #CED5C7;
     font-size: 1.5rem;
@@ -142,13 +150,13 @@ header {
     padding: 1fr;
   }
 
-  .consideraciones {
+  .preguntas__consideraciones {
     font-size: 1rem;
     font-weight: bold;
     margin: 3rem;
   }
 
-  .faq {
+  .preguntas__faq {
     background-color: #65E298;
     color: #000000;
     font-size: 1.5rem;
@@ -163,43 +171,14 @@ header {
     font-size: 1em;
   }
 
-  .tituloActividades {
+  .titulo__actividades {
     font-size: 4rem;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
   }
 
-  .actividades {
-    display: grid;
-    grid-template-areas: "flex stretch""hatha vinyasa""integral alineacion""feldenkrais multinivel";
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: auto;
-    place-items: center;
-    gap: 10px 10px;
 
-    img {
-      width: 200px;
-      height: 350px;
-      opacity: 1;
-      display: block;
-      transition: .5s ease;
-      backface-visibility: hidden;
-    }
-  }
-
-  .redesSociales {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    position: relative;
-    margin: 4em;
-
-    img {
-      margin: 1em;
-    }
-  }
 }
 
 @media (max-width: 600px) {
@@ -212,19 +191,10 @@ header {
     flex-wrap: wrap;
   }
 
-  .logoNav {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .nav {
-    width: 70%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
   }
@@ -233,7 +203,7 @@ header {
     text-decoration: none;
     color: #65E298;
     font-weight: 1000;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     display: block;
 
@@ -242,39 +212,85 @@ header {
     }
   }
 
-  #logoPrincipal {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+  .logoNav {
+    background-color: transparent;
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .actividades {
-    display: grid;
-    grid-template-areas: "flex stretch""hatha vinyasa""integral alineacion""feldenkrais multinivel";
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: auto;
-    place-items: center;
-    gap: 10px 10px;
-
-    img {
-      width: 200px;
-      height: 350px;
-      opacity: 1;
-      display: block;
-      transition: .5s ease;
-      backface-visibility: hidden;
-    }
-  }
-
-  .redesSociales {
+  .redes__sociales {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
     position: relative;
+    margin: 4em;
 
     img {
-      width: 1rem;
-      margin: 1rem;
+      margin: 1em;
     }
   }
+
+  .titulo__horarios {
+    color: #3AAF77;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+  }
+
+  .horarios__aranceles {
+    width: 100%;
+  }
+
+  .preguntas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+  }
+
+  .preguntas__protocolo {
+    background-color: #3AAF77;
+    color: #CED5C7;
+    font-size: 1rem;
+    border: 1px solid black;
+    display: flex;
+    align-self: stretch;
+    justify-self: center;
+    padding: 1fr;
+  }
+
+  .preguntas__consideraciones {
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin: 2rem;
+  }
+
+  .preguntas__faq {
+    background-color: #65E298;
+    color: #000000;
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+
+  .accordion-button {
+    font-size: .3em;
+  }
+
+  .accordion-body {
+    font-size: .7em;
+  }
+
+  .titulo__actividades {
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+  }
+
+
 }
