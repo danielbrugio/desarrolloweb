@@ -20,15 +20,23 @@
   bottom: 0;
 }
 
+.formulario__mapa {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.formulario__contacto {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2em;
+}
+
 .mapa {
   color: black;
   font-size: 2rem;
-  position: relative;
-  top: -15rem;
-  bottom: 7rem;
-  left: 60rem;
-  right: 5rem;
   width: 70rem;
   height: 70rem;
-  display: inline-block;
 }

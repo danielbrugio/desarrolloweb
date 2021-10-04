@@ -57,30 +57,28 @@
 
   <h1 class="tituloContacto">Si te interesa tomar clases o querés hacer alguna sugerencia/consulta comunicate con nosotrxs.</h1>
 
-  <form class="formContacto">
-    <div>
-
-      <input required type="text" id="nombre" name="nombre" placeholder="Nombre">
-    </div>
-    <div>
-
-      <input required type="number" id="Telefono" name="telefono" placeholder="Telefono">
-    </div>
-
-    <div>
-      <textarea name="consulta" id="consulta" cols="30" rows="2" maxlength="150"></textarea placeholder="Mensaje">
-            </div>
-           
-            
-            <div>
-                <input type="reset" value="Borrar">
-                <input type="submit" value="Enviar">
-            </div>
-        </form>
-        
-        <section class="mapa">
-            <p>27 de abril 929, Alberdi</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.0135953979275!2d-64.19911598530643!3d-31.41375150326688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988040db9e21%3A0x8c0fff0db9158c6a!2s27%20de%20Abril%20929%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1628727308653!5m2!1ses!2sar" width="260" height="245" style="border:0;" allowfullscreen="" loading="lazy"></iframe></section>
+  <section class="formulario__mapa">
+    <section class="formulario__contacto">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+        <label for="nombre">Nombre</label>
+      </div>
+      <div class="form-floating">
+        <input type="number" class="form-control" id="telefono" placeholder="Telefono">
+        <label for="Telefono">Telefono</label>
+      </div>
+      <div class="form-floating">
+        <textarea name="consulta" class="form-control" id="consulta" cols="50" rows="5" maxlength="150"  placeholder="consulta">
+          </textarea>
+          <label for="consulta">Consulta y/o sugerencia</label>
+      </div>
+    </section>
+    
+          <section class="mapa">
+              <p>27 de abril 929, Alberdi</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.0135953979275!2d-64.19911598530643!3d-31.41375150326688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988040db9e21%3A0x8c0fff0db9158c6a!2s27%20de%20Abril%20929%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1628727308653!5m2!1ses!2sar" width="260" height="245" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+  </section>
 
         
             <footer>
