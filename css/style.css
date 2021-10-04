@@ -1,375 +1,6 @@
 /*--------------- FONTS -------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-/*--------------- RESET -------------*/
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Playfair Display', 'Montserrat', sans-serif;
-}
-
-/*--------------- GENERAL -------------*/
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: #ffffff;
-  color: #3AAF77;
-  font-weight: 100;
-}
-
-header {
-  background-color: transparent;
-  width: 100;
-  height: 160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.redes__sociales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
-.redes__sociales .redes__sociales__img {
-  width: 3rem;
-  color: #3AAF77;
-  margin: 0.5em;
-}
-
-.logoNav {
-  background-color: transparent;
-  width: 15em;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.navbar-nav {
-  width: 50em;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-.navbar-nav a {
-  color: #3AAF77;
-}
-
-.nav-link {
-  color: #3AAF77 !important;
-}
-
-/*----------MEDIA QUERY------------*/
-@media (max-width: 1030px) {
-  header {
-    background-color: white;
-    width: 100%;
-    height: 150px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .nav {
-    width: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  a {
-    text-decoration: none;
-    color: #65E298;
-    font-weight: 1000;
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-    display: block;
-  }
-  a:hover {
-    color: #3AAF77;
-  }
-  .logoNav {
-    background-color: transparent;
-    width: 10em;
-    height: 10em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .redes__sociales {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    position: relative;
-    margin: 4em;
-  }
-  .redes__sociales img {
-    margin: 1em;
-  }
-  .titulo__horarios {
-    color: #3AAF77;
-    font-size: 3em;
-    text-transform: uppercase;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .horarios__aranceles {
-    width: 100%;
-  }
-  .preguntas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .preguntas__protocolo {
-    background-color: #3AAF77;
-    color: #CED5C7;
-    font-size: 1.5rem;
-    border: 1px solid black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: stretch;
-        align-self: stretch;
-    justify-self: center;
-    padding: 1fr;
-  }
-  .preguntas__consideraciones {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 3rem;
-  }
-  .preguntas__faq {
-    background-color: #65E298;
-    color: #000000;
-    font-size: 1.5rem;
-    margin: 1rem;
-  }
-  .accordion-button {
-    font-size: .5em;
-  }
-  .accordion-body {
-    font-size: 1em;
-  }
-  .titulo__actividades {
-    font-size: 4rem;
-    text-transform: uppercase;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (max-width: 600px) {
-  header {
-    background-color: white;
-    width: 100%;
-    height: 150px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  a {
-    text-decoration: none;
-    color: #65E298;
-    font-weight: 1000;
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-    display: block;
-  }
-  a:hover {
-    color: #3AAF77;
-  }
-  .logoNav {
-    background-color: transparent;
-    width: 10em;
-    height: 10em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .redes__sociales {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    position: relative;
-    margin: 4em;
-  }
-  .redes__sociales img {
-    margin: 1em;
-  }
-  .titulo__horarios {
-    color: #3AAF77;
-    font-size: 1em;
-    text-transform: uppercase;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .horarios__aranceles {
-    width: 100%;
-  }
-  .preguntas {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-line-pack: distribute;
-        align-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .preguntas__protocolo {
-    background-color: #3AAF77;
-    color: #CED5C7;
-    font-size: 1rem;
-    border: 1px solid black;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: stretch;
-        align-self: stretch;
-    justify-self: center;
-    padding: 1fr;
-  }
-  .preguntas__consideraciones {
-    font-size: 0.5rem;
-    font-weight: bold;
-    margin: 2rem;
-  }
-  .preguntas__faq {
-    background-color: #65E298;
-    color: #000000;
-    font-size: 1rem;
-    margin: 0.5rem;
-  }
-  .accordion-button {
-    font-size: .3em;
-  }
-  .accordion-body {
-    font-size: .7em;
-  }
-  .titulo__actividades {
-    font-size: 2rem;
-    text-transform: uppercase;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 /*--------------- INDEX -------------*/
 #logo__principal {
   width: 100%;
@@ -709,5 +340,374 @@ header {
   margin: 20px;
   font-size: 7em;
   width: 1100px;
+}
+
+/*--------------- RESET -------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Playfair Display', 'Montserrat', sans-serif;
+}
+
+/*--------------- GENERAL -------------*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ffffff;
+  color: #3AAF77;
+  font-weight: 100;
+}
+
+header {
+  background-color: transparent;
+  width: 100;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.redes__sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.redes__sociales .redes__sociales__img {
+  width: 3rem;
+  color: #3AAF77;
+  margin: 0.5em;
+}
+
+.logoNav {
+  background-color: transparent;
+  width: 15em;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navbar-nav {
+  width: 50em;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.navbar-nav a {
+  color: #3AAF77;
+}
+
+.nav-link {
+  color: #3AAF77 !important;
+}
+
+/*----------MEDIA QUERY------------*/
+@media (max-width: 1030px) {
+  header {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nav {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  a {
+    text-decoration: none;
+    color: #65E298;
+    font-weight: 1000;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+  }
+  a:hover {
+    color: #3AAF77;
+  }
+  .logoNav {
+    background-color: transparent;
+    width: 10em;
+    height: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .redes__sociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+    margin: 4em;
+  }
+  .redes__sociales img {
+    margin: 1em;
+  }
+  .titulo__horarios {
+    color: #3AAF77;
+    font-size: 3em;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .horarios__aranceles {
+    width: 100%;
+  }
+  .preguntas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .preguntas__protocolo {
+    background-color: #3AAF77;
+    color: #CED5C7;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    justify-self: center;
+    padding: 1fr;
+  }
+  .preguntas__consideraciones {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 3rem;
+  }
+  .preguntas__faq {
+    background-color: #65E298;
+    color: #000000;
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  .accordion-button {
+    font-size: .5em;
+  }
+  .accordion-body {
+    font-size: 1em;
+  }
+  .titulo__actividades {
+    font-size: 4rem;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  a {
+    text-decoration: none;
+    color: #65E298;
+    font-weight: 1000;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+  }
+  a:hover {
+    color: #3AAF77;
+  }
+  .logoNav {
+    background-color: transparent;
+    width: 10em;
+    height: 10em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .redes__sociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    position: relative;
+    margin: 4em;
+  }
+  .redes__sociales img {
+    margin: 1em;
+  }
+  .titulo__horarios {
+    color: #3AAF77;
+    font-size: 3em;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .horarios__aranceles {
+    width: 100%;
+  }
+  .preguntas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .preguntas__protocolo {
+    background-color: #3AAF77;
+    color: #CED5C7;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: stretch;
+        align-self: stretch;
+    justify-self: center;
+    padding: 1fr;
+  }
+  .preguntas__consideraciones {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 2rem;
+  }
+  .preguntas__faq {
+    background-color: #65E298;
+    color: #000000;
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+  .accordion-button {
+    font-size: .5em;
+  }
+  .accordion-body {
+    font-size: 1em;
+  }
+  .titulo__actividades {
+    font-size: 3rem;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

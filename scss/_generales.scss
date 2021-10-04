@@ -235,7 +235,7 @@ header {
 
   .titulo__horarios {
     color: #3AAF77;
-    font-size: 1em;
+    font-size: 3em;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -256,7 +256,7 @@ header {
   .preguntas__protocolo {
     background-color: #3AAF77;
     color: #CED5C7;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border: 1px solid black;
     display: flex;
     align-self: stretch;
@@ -265,7 +265,7 @@ header {
   }
 
   .preguntas__consideraciones {
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: 2rem;
   }
@@ -273,20 +273,20 @@ header {
   .preguntas__faq {
     background-color: #65E298;
     color: #000000;
-    font-size: 1rem;
+    font-size: 2rem;
     margin: 0.5rem;
   }
 
   .accordion-button {
-    font-size: .3em;
+    font-size: .5em;
   }
 
   .accordion-body {
-    font-size: .7em;
+    font-size: 1em;
   }
 
   .titulo__actividades {
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
