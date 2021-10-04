@@ -11,61 +11,13 @@
 .actividades {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  /*display: grid;
-  grid-template-areas: "flex stretch hatha""vinyasa reflex integral""alineacion feldenkrais multinivel";
-  grid-template-columns: repeat(3, 30%);
-  grid-template-rows: auto;
-  place-items: center;
-  gap: 10px 10px;*/
-}
-
-.actividades__cards {
-  position: relative;
-}
-
-.actividades__img {
-  width: 300px;
-  height: 500px;
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.actividades__boton__horarios {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.actividades__cards:hover .actividades__img {
-  opacity: 1;
-}
-
-.actividades__cards:hover .actividades__boton__horarios {
-  opacity: 1;
-}
-
-.reserva {
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: white;
-  color: black;
-  text-align: center;
-  border: 1px solid black;
-  font-weight: 800;
 }
 
 .actividad {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
 }
