@@ -631,21 +631,7 @@ header {
 .tituloContacto {
   color: #3AAF77;
   font-size: 2em;
-  position: relative;
-  top: 0;
-  left: 2rem;
-  right: 60%;
-  bottom: 0;
-  margin-right: 60%;
-}
-
-.formContacto {
-  font-size: 1.5rem;
-  position: relative;
-  top: 0;
-  left: 2rem;
-  right: 60%;
-  bottom: 0;
+  margin: 2em;
 }
 
 .formulario__mapa {
