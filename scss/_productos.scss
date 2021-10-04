@@ -9,10 +9,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.card {
+.producto {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -20,16 +20,16 @@
     margin: 1em;
 }
 
-.card-title {
+.producto__title {
     color: black;
     font-size: 2em;
 }
-.card-text {
+.producto__text {
     color: black;
     font-size: 2em;
 }
 
-.card-price {
+.producto__price {
     color: black;
     font-size: 2em;
 }
