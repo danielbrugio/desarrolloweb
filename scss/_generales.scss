@@ -41,6 +41,25 @@ header {
   }
 }
 
+.footer__horizontal {
+  display: flex;
+  justify-content: space-around;
+
+  .redes__sociales__img {
+    width: 3rem;
+    color: #3AAF77;
+    margin: 2em;
+  }
+
+  .direccion__horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+
+}
+
 .logoNav {
   background-color: transparent;
   width: 15em;
