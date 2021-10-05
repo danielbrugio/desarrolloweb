@@ -178,6 +178,26 @@ header {
     justify-content: center;
   }
 
+  .titulo__productos {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .titulo__contacto {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .formulario__mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+
 
 }
 
@@ -290,6 +310,27 @@ header {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+  }
+
+  .titulo__productos {
+    font-size: 3rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+  }
+
+  .titulo__contacto {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .formulario__mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
   }
 
 
