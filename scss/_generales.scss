@@ -66,6 +66,7 @@ header {
 
 /*----------MEDIA QUERY------------*/
 @media (max-width: 1030px) {
+  /*----------GENERALES------------*/
   header {
     background-color: white;
     width: 100%;
@@ -119,6 +120,7 @@ header {
     }
   }
 
+  /*----------HORARIOS------------*/
   .titulo__horarios {
     color: #3AAF77;
     font-size: 3em;
@@ -171,6 +173,8 @@ header {
     font-size: 1em;
   }
 
+    /*----------ACTIVIDADES------------*/
+
   .titulo__actividades {
     font-size: 4rem;
     text-transform: uppercase;
@@ -178,11 +182,19 @@ header {
     justify-content: center;
   }
 
+    /*----------PRODUCTOS------------*/
+
   .titulo__productos {
     font-size: 4rem;
     display: flex;
     justify-content: center;
   }
+
+    /*----------NOSOTROS------------*/
+
+  
+
+    /*----------CONTACTO------------*/
 
   .titulo__contacto {
     font-size: 4rem;
@@ -202,6 +214,8 @@ header {
 }
 
 @media (max-width: 600px) {
+    /*----------GENERALES------------*/
+
   header {
     background-color: white;
     width: 100%;
@@ -252,6 +266,8 @@ header {
       margin: 1em;
     }
   }
+
+    /*----------HORARIOS------------*/
 
   .titulo__horarios {
     color: #3AAF77;
@@ -305,6 +321,8 @@ header {
     font-size: 1em;
   }
 
+    /*----------ACTIVIDADES------------*/
+
   .titulo__actividades {
     font-size: 3rem;
     text-transform: uppercase;
@@ -312,12 +330,18 @@ header {
     justify-content: center;
   }
 
+    /*----------PRODUCTOS------------*/
+
   .titulo__productos {
     font-size: 3rem;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
   }
+
+    /*----------NOSOTROS------------*/
+
+    /*----------CONTACTO------------*/
 
   .titulo__contacto {
     font-size: 3rem;

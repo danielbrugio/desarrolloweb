@@ -218,12 +218,12 @@
 }
 
 /*--------------- NOSOTROS -------------*/
-.tituloNosotros {
+.titulo__nosotros {
   font-size: 4rem;
   text-align: center;
 }
 
-.quienesSomos {
+.quienes__somos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,41 +238,28 @@
       align-content: center;
 }
 
-.quienesSomos img {
-  width: 200px;
-  height: 200px;
-  padding: 10px;
+.quienes__somos img {
+  width: 20em;
+  height: 20em;
+  padding: 1em;
 }
 
-.profeTallerFlex,
-.profeStretching,
-.profeHatha,
-.profeVinyasa,
-.profeReflex,
-.profeIntegral,
-.profeFeldenkrais,
-.profeMultinivel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 20px;
-}
-
-.profeTitulo {
-  font-size: 4em;
+.nosotros__title {
+  font-size: 3rem;
   color: #3AAF77;
 }
 
-.profeParrafo {
-  font-size: 2em;
+.nosotros__text {
+  font-size: 2rem;
   color: black;
   font-weight: bold;
+}
+
+.nosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
 }
 
 /*--------------- CONTACTO -------------*/
@@ -424,6 +411,7 @@ header {
 
 /*----------MEDIA QUERY------------*/
 @media (max-width: 1030px) {
+  /*----------GENERALES------------*/
   header {
     background-color: white;
     width: 100%;
@@ -496,6 +484,7 @@ header {
   .redes__sociales img {
     margin: 1em;
   }
+  /*----------HORARIOS------------*/
   .titulo__horarios {
     color: #3AAF77;
     font-size: 3em;
@@ -556,6 +545,7 @@ header {
   .accordion-body {
     font-size: 1em;
   }
+  /*----------ACTIVIDADES------------*/
   .titulo__actividades {
     font-size: 4rem;
     text-transform: uppercase;
@@ -566,6 +556,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  /*----------PRODUCTOS------------*/
   .titulo__productos {
     font-size: 4rem;
     display: -webkit-box;
@@ -575,6 +566,8 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  /*----------NOSOTROS------------*/
+  /*----------CONTACTO------------*/
   .titulo__contacto {
     font-size: 4rem;
     display: -webkit-box;
@@ -604,6 +597,7 @@ header {
 }
 
 @media (max-width: 600px) {
+  /*----------GENERALES------------*/
   header {
     background-color: white;
     width: 100%;
@@ -675,6 +669,7 @@ header {
   .redes__sociales img {
     margin: 1em;
   }
+  /*----------HORARIOS------------*/
   .titulo__horarios {
     color: #3AAF77;
     font-size: 3em;
@@ -735,6 +730,7 @@ header {
   .accordion-body {
     font-size: 1em;
   }
+  /*----------ACTIVIDADES------------*/
   .titulo__actividades {
     font-size: 3rem;
     text-transform: uppercase;
@@ -745,6 +741,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  /*----------PRODUCTOS------------*/
   .titulo__productos {
     font-size: 3rem;
     text-transform: uppercase;
@@ -755,6 +752,8 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  /*----------NOSOTROS------------*/
+  /*----------CONTACTO------------*/
   .titulo__contacto {
     font-size: 3rem;
     display: -webkit-box;
